@@ -1,15 +1,17 @@
 <template>
   <div class="text">
     {{text}}
-    <img src="./imgs/haha.png"/>
+    <img :src="src" />
   </div>
 </template>>
 
 <script>
+import Src from './imgs/haha.png';
 export default {
   data() {
     return {
-      text: 'hello world'
+      text: 'hello world',
+      src: Src
     }
   }
 }
@@ -18,6 +20,5 @@ export default {
 <style>
   .text {
     color:aqua;
-    background: url('./imgs/haha.png');
   }
 </style>>
